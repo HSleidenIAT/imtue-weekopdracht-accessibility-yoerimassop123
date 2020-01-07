@@ -9,9 +9,13 @@ html {
   font-size: 10px;
   background-color: #dde;
 }
+caption
+{
+  text-align: justify;
+}
 
 body {
-  width: 80%;
+  width: 95%;
   min-width: 1024px;
   margin: 0 auto;
 }
@@ -29,10 +33,12 @@ p, input, li, table, label {
 }
 
 font[size="7"] {
-  font-size: 4rem;
-  text-align: center;
-  color: white;
-  text-shadow: 2px 2px 10px black;
+    font-size: 4rem;
+    text-align: center;
+    display: block;
+    padding: 0.4em;
+    color: white;
+    text-shadow: 2px 2px 10px black;
 }
 
 font[size="6"] {
@@ -51,8 +57,8 @@ p, li, table {
 
 /* || header layout */
 
-div[class="nav"], article, footer, .secondary {
-  background-color: green;
+nav[class="nav"], article, footer, .secondary {
+  background-color: #ffffff;
 }
 
 article, footer, .secondary {
@@ -63,7 +69,7 @@ article {
   margin-right: 10px;
 }
 
-div[class="nav"] {
+nav[class="nav"] {
   height: 50px;
   background-color: ff80ff;
   display: flex;
@@ -71,20 +77,20 @@ div[class="nav"] {
   margin-bottom: 10px;
 }
 
-div[class="nav"] ul {
+nav[class="nav"] ul {
   padding: 0;
   list-style-type: none;
   flex: 2;
   display: flex;
 }
 
-div[class="nav"] li {
+nav[class="nav"] li {
   display: inline;
   text-align: center;
   flex: 1;
 }
 
-div[class="nav"] a {
+nav[class="nav"] a {
   display: inline-block;
   font-size: 2rem;
   text-transform: uppercase;
@@ -92,7 +98,7 @@ div[class="nav"] a {
   color: black;
 }
 
-div[class="nav"] .search {
+nav[class="nav"] .search {
   flex: 1;
   display: flex;
   align-items: center;
